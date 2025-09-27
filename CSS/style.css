@@ -105,6 +105,69 @@ body.font-ruqaa { font-family: 'Aref Ruqaa', serif; font-weight: 700; }
   outline: none;
 }
 
+/* حاوية المشغل */
+.audio-player-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 15px;
+  background: var(--card-bg, #f9f9f9);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  max-width: 500px;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+
+.audio-player-container p{
+  width: 20%;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  margin: 20px;
+  align-items: center;
+  background: linear-gradient(135deg, #007bff, #00c4ff);
+  border-radius: 10px;
+  padding: 1px 1px 1px;
+}
+
+.audio-player-container:hover {
+  transform: scale(1.02);
+}
+
+/* المشغل نفسه */
+#audio-player {
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* إخفاء التنسيقات الافتراضية (اختياري لمتصفحات تدعم) */
+#audio-player::-webkit-media-controls-panel {
+  background: linear-gradient(135deg, #007bff, #00c4ff);
+  border-radius: 10px;
+}
+
+#audio-player::-webkit-media-controls-play-button,
+#audio-player::-webkit-media-controls-pause-button {
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+#audio-player::-webkit-media-controls-current-time-display,
+#audio-player::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+  font-weight: bold;
+}
+
+#audio-player::-webkit-media-controls-volume-slider,
+#audio-player::-webkit-media-controls-timeline {
+  background: #eee;
+  border-radius: 50px;
+}
+
 
 /* ========== شبكة خيارات الاختبار ========== */
 .mc-options-grid {
