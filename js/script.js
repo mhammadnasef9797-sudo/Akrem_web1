@@ -11,8 +11,6 @@ updateClock();
 
 /* أحاديث عشوائية */
 const hadiths = [
-  { text: "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ", source: "البخاري ومسلم" },
-  { text: "الدِّينُ النَّصِيحَةُ", source: "مسلم" },
   { text: "الطُّهُورُ شَطْرُ الإِيمَانِ", source: "مسلم" }
 ];
 function displayRandomHadith(containerId) {
@@ -25,10 +23,18 @@ displayRandomHadith("hadith-display-start");
 
 /* أصوات عشوائية */
 const audio = [
-  { text: "تفسير ســورة الــكوثــر", source: "الاية الأولى" },
-  { text: "تفسير ســورة الــكوثــر", source: "الاية الثانية" },
-  { text: "تفسير ســورة الــكوثــر", source: "الاية الثالثة" }
+  { text: "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ", source: "البخاري ومسلم" },
+  
+ 
 ];
+function displayRandomaudio(containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const random = audio[Math.floor(Math.random() * audio.length)];
+  container.innerHTML = `<p class="audio-text">${random.text}</p><p class="audio-source">${random.source}</p>`;
+}
+displayRandomaudio("audio-display-start");
+
 function displayRandomaudio(containerId) {
   const container = document.getElementById(containerId);
   if (!container) return;
