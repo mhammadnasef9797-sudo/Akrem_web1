@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عِلْمُ مُصْطَلَحِ الْحَدِيثِ</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=KFGQPC+Uthman+Taha+Naskh:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- CSS -->
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+<div class="main-container" id="main-container">
+
+  <!-- رأس الصفحة -->
+  <header class="main-header">
+    <h1>عِلْمُ مُصْطَلَحِ الْحَدِيثِ</h1> 
+  </header>
+
+  <!-- الساعة -->
+  <div class="main-clock-container" id="desktop-clock">
+    <i class="fa-solid fa-calendar-alt"></i>
+    <span id="desktop-clock-display"></span>
+  </div>
+
+  <!-- عرض الحديث -->
+  <div class="hadith-display" id="hadith-display-start"></div>
+
+  <!-- عرض الصوت -->
+  <div class="audio-display" id="audio-display-start"></div>
+  <!-- مشغل صوتي -->
+<div class="audio-player-container">
+  <audio id="audio-player" controls>
+    <source src="audio/سورة الكوثر.mp3" type="audio/mpeg">
+    المتصفح لا يدعم تشغيل الصوت.
+  </audio>
+</div>
+
+
+  <!-- زر بدء الاختبار -->
+  <section id="quiz-start-section" style="text-align:center; margin-bottom:30px;">
+    <button class="action-btn" onclick="startQuiz()">▶️ بدء الاختبار</button>
+  </section>
+
+  <!-- حاوية الأسئلة -->
+  <main id="quiz-container"></main>
+
+  <!-- إشعارات -->
+  <div id="notification-container"></div>
+
+  <!-- الفوتر -->
+  <footer class="main-footer">
+    <div class="footer-logo">
+      <img src="img/icon12-removebg-preview.png" alt="Logo">
+      <h2>عِلْمُ مُصْطَلَحِ الْحَدِيثِ</h2>
+    </div>
+    <div class="footer-rights">© جميع الحقوق محفوظة لأبو حذيفة أكرم الشريف</div>
+    <div class="footer-links">
+      <a href="#"><i class="fa-solid fa-house"></i> الرئيسية</a>
+      <a href="#"><i class="fa-solid fa-book"></i> المكتبة</a>
+      <a href="#"><i class="fa-solid fa-envelope"></i> تواصل معنا</a>
+    </div>
+  </footer>
+
+</div>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
+</body>
+</html>
