@@ -181,9 +181,15 @@ body.font-ruqaa { font-family: 'Aref Ruqaa', serif; font-weight: 700; }
     align-items: stretch;
   }
 
+  .custom-box {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
   .buttons-box a {
     flex: none;
-    width: 100%; /* يأخذ العرض كامل */
+    width: 50%; /* يأخذ العرض نصف */
   }
 }
 
