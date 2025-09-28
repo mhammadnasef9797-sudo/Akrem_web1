@@ -84,6 +84,10 @@ body.font-ruqaa { font-family: 'Aref Ruqaa', serif; font-weight: 700; }
   width: fit-content;
 }
 
+.custom-box i{
+  border-radius: 50px;
+  }
+
 /* الأزرار */
 .box-btn {
   text-decoration: none;
