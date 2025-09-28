@@ -71,6 +71,121 @@ body.font-ruqaa { font-family: 'Aref Ruqaa', serif; font-weight: 700; }
 }
 .main-clock-container i { color: var(--accent-color); font-size: 1.3rem; }
 
+/* صندوق الأزرار */
+.custom-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: var(--card-bg);
+  padding: 15px 25px;
+  border-radius: 50px;
+  box-shadow: var(--neumorphism-shadow);
+  margin: 20px auto;
+  width: fit-content;
+}
+
+/* الأزرار */
+.box-btn {
+  text-decoration: none;
+  color: #3b5266;
+  padding: 12px 25px;
+  border-radius: 50px; /* الزر دائري */
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  min-width: 160px; /* يخلي كل الأزرار تقريباً متساوية العرض */
+  justify-content: center;
+}
+
+/* ألوان مميزة لكل زر */
+.settings-btn {
+  background: #007bff; /* أزرق */
+}
+.analysis-btn {
+  background: #28a745; /* أخضر */
+}
+.finish-btn {
+  background: #ff9800; /* برتقالي */
+}
+
+/* تأثير hover */
+.box-btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.main-header {
+  text-align: center;
+  padding: 20px;
+  background: var(--card-bg);
+  box-shadow: var(--neumorphism-shadow);
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 30px;
+}
+
+.main-header h1 {
+  color: var(--text-color);
+  font-size: 1.8rem;
+}
+
+.page-container {
+  max-width: 800px;             /* عرض مناسب */
+  margin: 0 auto;               /* توسيط */
+  padding: 30px;
+  background: var(--card-bg);   /* نفس خلفية الكروت */
+  box-shadow: var(--neumorphism-shadow);
+  border-radius: 20px;
+  text-align: center;           /* محاذاة للوسط */
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+.page-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: var(--text-color);
+}
+
+.page-container p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  color: var(--text-muted);
+}
+
+/* زر الرجوع */
+.back-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: var(--primary-color, #007bff);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+  box-shadow: var(--neumorphism-shadow);
+}
+
+.back-btn:hover {
+  background: #0056b3;
+  transform: translateY(-3px);
+}
+
+
+.main-footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  background: var(--card-bg);
+  box-shadow: var(--neumorphism-shadow);
+  border-radius: 20px 20px 0 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
 /* ========== عرض الحديث ========== */
 .hadith-display, .audio-display {
   padding: 25px;
