@@ -131,6 +131,63 @@ body.font-ruqaa { font-family: 'Aref Ruqaa', serif; font-weight: 700; }
   font-size: 1.8rem;
 }
 
+/* تنسيقات صندوق الأزرار */
+.buttons-box {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: var(--card-bg);
+  box-shadow: var(--neumorphism-shadow);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  flex-wrap: wrap; /* يسمح بتغيير التوزيع عند صغر الشاشة */
+}
+
+/* كل زر */
+.buttons-box a {
+  flex: 1 1 30%; /* يأخذ ثلث العرض تقريبا */
+  min-width: 120px; /* أقل عرض للزر */
+  text-align: center;
+  padding: 15px 20px;
+  background: var(--primary-color, #007bff);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 15px;
+  text-decoration: none;
+  box-shadow: var(--neumorphism-shadow);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.buttons-box a i {
+  font-size: 1.5rem;
+}
+
+.buttons-box a:hover {
+  background: #0056b3;
+  transform: translateY(-4px);
+}
+
+/* تحسين الشكل على الشاشات الصغيرة */
+@media (max-width: 600px) {
+  .buttons-box {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .buttons-box a {
+    flex: none;
+    width: 100%; /* يأخذ العرض كامل */
+  }
+}
+
+
 .page-container {
   max-width: 800px;             /* عرض مناسب */
   margin: 0 auto;               /* توسيط */
